@@ -1,0 +1,11 @@
+[
+	{ "pharmacyId": "p1", "medicineId": "m1", "price": 8.99, "availability": "in_stock" },
+	{ "pharmacyId": "p1", "medicineId": "m2", "price": 11.49, "availability": "low_stock" },
+	{ "pharmacyId": "p2", "medicineId": "m1", "price": 9.49, "availability": "in_stock" },
+	{ "pharmacyId": "p2", "medicineId": "m3", "price": 10.99, "availability": "in_stock" },
+	{ "pharmacyId": "p3", "medicineId": "m4", "price": 8.49, "availability": "out_of_stock" },
+	{ "pharmacyId": "p3", "medicineId": "m2", "price": 10.49, "availability": "in_stock" },
+	{ "pharmacyId": "p4", "medicineId": "m5", "price": 12.99, "availability": "in_stock" }
+]
+
+

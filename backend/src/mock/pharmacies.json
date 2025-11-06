@@ -1,0 +1,8 @@
+[
+	{ "id": "p1", "name": "HealthPlus Pharmacy", "location": "Boston", "address": "12 Beacon St, Boston, MA" },
+	{ "id": "p2", "name": "CareWell Drugs", "location": "Cambridge", "address": "100 Main St, Cambridge, MA" },
+	{ "id": "p3", "name": "CityMeds", "location": "Boston", "address": "77 Boylston St, Boston, MA" },
+	{ "id": "p4", "name": "Neighborhood Pharmacy", "location": "Somerville", "address": "5 Elm St, Somerville, MA" }
+]
+
+
