@@ -3,7 +3,28 @@
 	{ "id": "m2", "name": "Advil", "genericName": "Ibuprofen" },
 	{ "id": "m3", "name": "Motrin", "genericName": "Ibuprofen" },
 	{ "id": "m4", "name": "Panadol", "genericName": "Acetaminophen" },
-	{ "id": "m5", "name": "Aleve", "genericName": "Naproxen" }
+	{ "id": "m5", "name": "Aleve", "genericName": "Naproxen" },
+
+	{ "id": "m6", "name": "Paracetamol", "genericName": "Acetaminophen" },
+	{ "id": "m7", "name": "Dolo 650", "genericName": "Acetaminophen" },
+	{ "id": "m8", "name": "Crocin", "genericName": "Acetaminophen" },
+	{ "id": "m9", "name": "Calpol", "genericName": "Acetaminophen" },
+	{ "id": "m10", "name": "Brufen", "genericName": "Ibuprofen" },
+	{ "id": "m11", "name": "Azithral", "genericName": "Azithromycin" },
+	{ "id": "m12", "name": "Augmentin", "genericName": "Amoxicillin+Clavulanate" }
+,
+	{ "id": "m13", "name": "Cetrizine", "genericName": "Cetirizine" },
+	{ "id": "m14", "name": "Montek", "genericName": "Montelukast" },
+	{ "id": "m15", "name": "Pantocid", "genericName": "Pantoprazole" },
+	{ "id": "m16", "name": "Omez", "genericName": "Omeprazole" },
+	{ "id": "m17", "name": "Glycomet", "genericName": "Metformin" },
+	{ "id": "m18", "name": "Atorva", "genericName": "Atorvastatin" },
+	{ "id": "m19", "name": "Amlopres", "genericName": "Amlodipine" },
+	{ "id": "m20", "name": "Losacar", "genericName": "Losartan" },
+	{ "id": "m21", "name": "Ciplox", "genericName": "Ciprofloxacin" },
+	{ "id": "m22", "name": "Amoxil", "genericName": "Amoxicillin" },
+	{ "id": "m23", "name": "ORS", "genericName": "Oral Rehydration Salts" },
+	{ "id": "m24", "name": "Limcee", "genericName": "Vitamin C (Ascorbic Acid)" }
 ]
 
 

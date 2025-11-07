@@ -25,7 +25,13 @@ const medicines = JSON.parse(readFileSync(join(__dirname, 'mock', 'medicines.jso
 const inventory = JSON.parse(readFileSync(join(__dirname, 'mock', 'inventory.json'), 'utf-8'));
 
 function normalize(str) {
-	return (str || '').toString().trim().toLowerCase();
+    return (str || '').toString().trim().toLowerCase();
+}
+function tokenize(str) {
+    return normalize(str)
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .split(/\s+/)
+        .filter(Boolean);
 }
 
 // Health
@@ -49,13 +55,20 @@ app.get('/api/medicines/search', (req, res) => {
 	const qLocation = normalize(req.query.location);
 	if (!q) return res.status(400).json({ error: 'Missing query parameter q' });
 
-	const matchedMedicineIds = medicines
-		.filter((m) => normalize(m.name).includes(q) || normalize(m.genericName).includes(q))
-		.map((m) => m.id);
+    const qTokens = tokenize(q);
+    const matchedMedicineIds = medicines
+        .filter((m) => {
+            const name = normalize(m.name);
+            const generic = normalize(m.genericName);
+            if (name.includes(q) || generic.includes(q)) return true;
+            // All tokens must appear in either name or generic (order-insensitive)
+            return qTokens.every((t) => name.includes(t) || generic.includes(t));
+        })
+        .map((m) => m.id);
 
 	const pharmacyById = new Map(pharmacies.map((p) => [p.id, p]));
 
-	const results = inventory
+	let results = inventory
 		.filter((item) => matchedMedicineIds.includes(item.medicineId))
 		.map((item) => {
 			const med = medicines.find((m) => m.id === item.medicineId);
@@ -73,6 +86,47 @@ app.get('/api/medicines/search', (req, res) => {
 		})
 		.filter((row) => (qLocation ? normalize(row.location).includes(qLocation) : true))
 		.sort((a, b) => a.price - b.price);
+
+	// If no results for a city, synthesize reasonable mock prices for that city
+	if (results.length === 0 && qLocation) {
+		const cityPharmacies = pharmacies.filter((p) => normalize(p.location).includes(qLocation));
+		if (cityPharmacies.length > 0 && matchedMedicineIds.length > 0) {
+			// Build base price per medicine from existing inventory as median; fallback 25
+			const priceByMed = new Map();
+			for (const medId of matchedMedicineIds) {
+				const prices = inventory.filter((i) => i.medicineId === medId).map((i) => i.price).sort((a,b)=>a-b);
+				const median = prices.length ? prices[Math.floor(prices.length/2)] : 25;
+				priceByMed.set(medId, median);
+			}
+
+			function pseudoVariance(seed) {
+				let h = 0;
+				for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+				return (h % 15) - 7; // -7..+7 percent
+			}
+
+			const synthetic = [];
+			for (const ph of cityPharmacies) {
+				for (const medId of matchedMedicineIds) {
+					const med = medicines.find((m) => m.id === medId);
+					const base = priceByMed.get(medId) ?? 25;
+					const variancePct = pseudoVariance(`${ph.id}-${medId}`);
+					const price = +(base * (1 + variancePct / 100)).toFixed(2);
+					synthetic.push({
+						medicineId: med.id,
+						medicineName: med.name,
+						genericName: med.genericName,
+						pharmacyId: ph.id,
+						pharmacyName: ph.name,
+						location: ph.location,
+						price,
+						availability: Math.abs(variancePct) > 5 ? 'low_stock' : 'in_stock',
+					});
+				}
+			}
+			results = synthetic.sort((a, b) => a.price - b.price);
+		}
+	}
 
 	res.json(results);
 });

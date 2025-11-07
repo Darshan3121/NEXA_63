@@ -5,7 +5,88 @@
 	{ "pharmacyId": "p2", "medicineId": "m3", "price": 10.99, "availability": "in_stock" },
 	{ "pharmacyId": "p3", "medicineId": "m4", "price": 8.49, "availability": "out_of_stock" },
 	{ "pharmacyId": "p3", "medicineId": "m2", "price": 10.49, "availability": "in_stock" },
-	{ "pharmacyId": "p4", "medicineId": "m5", "price": 12.99, "availability": "in_stock" }
+	{ "pharmacyId": "p4", "medicineId": "m5", "price": 12.99, "availability": "in_stock" },
+
+	{ "pharmacyId": "p5", "medicineId": "m6", "price": 25.00, "availability": "in_stock" },
+	{ "pharmacyId": "p5", "medicineId": "m7", "price": 28.00, "availability": "in_stock" },
+	{ "pharmacyId": "p6", "medicineId": "m7", "price": 27.00, "availability": "low_stock" },
+	{ "pharmacyId": "p6", "medicineId": "m11", "price": 120.00, "availability": "in_stock" },
+	{ "pharmacyId": "p7", "medicineId": "m8", "price": 22.00, "availability": "in_stock" },
+	{ "pharmacyId": "p7", "medicineId": "m10", "price": 35.00, "availability": "in_stock" },
+    { "pharmacyId": "p7", "medicineId": "m7", "price": 26.00, "availability": "in_stock" },
+    { "pharmacyId": "p7", "medicineId": "m6", "price": 23.00, "availability": "in_stock" },
+	{ "pharmacyId": "p8", "medicineId": "m12", "price": 180.00, "availability": "low_stock" },
+	{ "pharmacyId": "p8", "medicineId": "m11", "price": 115.00, "availability": "in_stock" },
+	{ "pharmacyId": "p9", "medicineId": "m6", "price": 24.00, "availability": "in_stock" },
+	{ "pharmacyId": "p9", "medicineId": "m10", "price": 33.00, "availability": "in_stock" },
+	{ "pharmacyId": "p10", "medicineId": "m9", "price": 21.00, "availability": "in_stock" },
+	{ "pharmacyId": "p10", "medicineId": "m12", "price": 175.00, "availability": "out_of_stock" }
+,
+    { "pharmacyId": "p5", "medicineId": "m8", "price": 23.50, "availability": "in_stock" },
+    { "pharmacyId": "p5", "medicineId": "m9", "price": 24.25, "availability": "in_stock" },
+    { "pharmacyId": "p5", "medicineId": "m10", "price": 34.00, "availability": "low_stock" },
+
+    { "pharmacyId": "p6", "medicineId": "m6", "price": 24.50, "availability": "in_stock" },
+    { "pharmacyId": "p6", "medicineId": "m8", "price": 22.75, "availability": "in_stock" },
+    { "pharmacyId": "p6", "medicineId": "m9", "price": 23.00, "availability": "in_stock" },
+    { "pharmacyId": "p6", "medicineId": "m12", "price": 178.00, "availability": "in_stock" },
+
+    { "pharmacyId": "p7", "medicineId": "m9", "price": 22.50, "availability": "in_stock" },
+    { "pharmacyId": "p7", "medicineId": "m11", "price": 118.00, "availability": "in_stock" },
+    { "pharmacyId": "p7", "medicineId": "m12", "price": 179.00, "availability": "low_stock" },
+
+    { "pharmacyId": "p8", "medicineId": "m6", "price": 24.25, "availability": "in_stock" },
+    { "pharmacyId": "p8", "medicineId": "m7", "price": 27.75, "availability": "in_stock" },
+    { "pharmacyId": "p8", "medicineId": "m8", "price": 23.25, "availability": "in_stock" },
+    { "pharmacyId": "p8", "medicineId": "m10", "price": 34.50, "availability": "in_stock" },
+
+    { "pharmacyId": "p9", "medicineId": "m7", "price": 26.25, "availability": "in_stock" },
+    { "pharmacyId": "p9", "medicineId": "m8", "price": 22.25, "availability": "in_stock" },
+    { "pharmacyId": "p9", "medicineId": "m11", "price": 117.00, "availability": "in_stock" },
+    { "pharmacyId": "p9", "medicineId": "m12", "price": 176.00, "availability": "low_stock" },
+
+    { "pharmacyId": "p10", "medicineId": "m6", "price": 23.75, "availability": "in_stock" },
+    { "pharmacyId": "p10", "medicineId": "m7", "price": 26.75, "availability": "in_stock" },
+    { "pharmacyId": "p10", "medicineId": "m8", "price": 22.75, "availability": "in_stock" },
+    { "pharmacyId": "p10", "medicineId": "m10", "price": 33.50, "availability": "in_stock" },
+
+    { "pharmacyId": "p1", "medicineId": "m6", "price": 8.75, "availability": "in_stock" },
+    { "pharmacyId": "p1", "medicineId": "m7", "price": 9.50, "availability": "in_stock" },
+    { "pharmacyId": "p3", "medicineId": "m8", "price": 8.40, "availability": "in_stock" },
+    { "pharmacyId": "p3", "medicineId": "m9", "price": 8.60, "availability": "in_stock" },
+    { "pharmacyId": "p2", "medicineId": "m10", "price": 11.25, "availability": "in_stock" }
+,
+    { "pharmacyId": "p11", "medicineId": "m13", "price": 12.00, "availability": "in_stock" },
+    { "pharmacyId": "p11", "medicineId": "m15", "price": 45.00, "availability": "in_stock" },
+    { "pharmacyId": "p11", "medicineId": "m17", "price": 60.00, "availability": "in_stock" },
+
+    { "pharmacyId": "p12", "medicineId": "m14", "price": 80.00, "availability": "in_stock" },
+    { "pharmacyId": "p12", "medicineId": "m16", "price": 40.00, "availability": "in_stock" },
+    { "pharmacyId": "p12", "medicineId": "m24", "price": 25.00, "availability": "in_stock" },
+
+    { "pharmacyId": "p13", "medicineId": "m19", "price": 75.00, "availability": "in_stock" },
+    { "pharmacyId": "p13", "medicineId": "m20", "price": 85.00, "availability": "low_stock" },
+    { "pharmacyId": "p13", "medicineId": "m23", "price": 15.00, "availability": "in_stock" },
+
+    { "pharmacyId": "p14", "medicineId": "m18", "price": 95.00, "availability": "in_stock" },
+    { "pharmacyId": "p14", "medicineId": "m21", "price": 110.00, "availability": "in_stock" },
+    { "pharmacyId": "p14", "medicineId": "m22", "price": 90.00, "availability": "in_stock" },
+
+    { "pharmacyId": "p15", "medicineId": "m17", "price": 7.50, "availability": "in_stock" },
+    { "pharmacyId": "p15", "medicineId": "m18", "price": 12.75, "availability": "in_stock" },
+    { "pharmacyId": "p15", "medicineId": "m22", "price": 9.25, "availability": "in_stock" },
+
+    { "pharmacyId": "p16", "medicineId": "m15", "price": 6.90, "availability": "in_stock" },
+    { "pharmacyId": "p16", "medicineId": "m19", "price": 8.40, "availability": "in_stock" },
+    { "pharmacyId": "p16", "medicineId": "m21", "price": 10.20, "availability": "low_stock" },
+
+    { "pharmacyId": "p17", "medicineId": "m13", "price": 5.80, "availability": "in_stock" },
+    { "pharmacyId": "p17", "medicineId": "m16", "price": 6.40, "availability": "in_stock" },
+    { "pharmacyId": "p17", "medicineId": "m20", "price": 11.10, "availability": "in_stock" },
+
+    { "pharmacyId": "p18", "medicineId": "m14", "price": 8.90, "availability": "in_stock" },
+    { "pharmacyId": "p18", "medicineId": "m23", "price": 3.50, "availability": "in_stock" },
+    { "pharmacyId": "p18", "medicineId": "m24", "price": 4.20, "availability": "in_stock" }
 ]
 
 

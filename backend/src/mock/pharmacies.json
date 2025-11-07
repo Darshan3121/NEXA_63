@@ -2,7 +2,23 @@
 	{ "id": "p1", "name": "HealthPlus Pharmacy", "location": "Boston", "address": "12 Beacon St, Boston, MA" },
 	{ "id": "p2", "name": "CareWell Drugs", "location": "Cambridge", "address": "100 Main St, Cambridge, MA" },
 	{ "id": "p3", "name": "CityMeds", "location": "Boston", "address": "77 Boylston St, Boston, MA" },
-	{ "id": "p4", "name": "Neighborhood Pharmacy", "location": "Somerville", "address": "5 Elm St, Somerville, MA" }
+	{ "id": "p4", "name": "Neighborhood Pharmacy", "location": "Somerville", "address": "5 Elm St, Somerville, MA" },
+
+	{ "id": "p5", "name": "Medico Mart", "location": "Hyderabad", "address": "Banjara Hills, Hyderabad" },
+	{ "id": "p6", "name": "Apollo Pharmacy", "location": "Hyderabad", "address": "Madhapur, Hyderabad" },
+	{ "id": "p7", "name": "HealthKart Rx", "location": "Mumbai", "address": "Andheri West, Mumbai" },
+	{ "id": "p8", "name": "Guardian Pharmacy", "location": "Delhi", "address": "Connaught Place, Delhi" },
+	{ "id": "p9", "name": "MedPlus", "location": "Bengaluru", "address": "Indiranagar, Bengaluru" },
+	{ "id": "p10", "name": "Apollo Pharmacy", "location": "Chennai", "address": "T Nagar, Chennai" }
+,
+	{ "id": "p11", "name": "WellCare Pharmacy", "location": "Pune", "address": "Koregaon Park, Pune" },
+	{ "id": "p12", "name": "CityCare Pharmacy", "location": "Kolkata", "address": "Salt Lake, Kolkata" },
+	{ "id": "p13", "name": "Jaipur Meds", "location": "Jaipur", "address": "MI Road, Jaipur" },
+	{ "id": "p14", "name": "Amdavad Pharmacy", "location": "Ahmedabad", "address": "Navrangpura, Ahmedabad" },
+	{ "id": "p15", "name": "Downtown Pharmacy", "location": "New York", "address": "Manhattan, NY" },
+	{ "id": "p16", "name": "BayCare Drugs", "location": "San Francisco", "address": "SOMA, San Francisco, CA" },
+	{ "id": "p17", "name": "LA Health Pharmacy", "location": "Los Angeles", "address": "Downtown LA, CA" },
+	{ "id": "p18", "name": "Emerald City Pharmacy", "location": "Seattle", "address": "Capitol Hill, Seattle, WA" }
 ]
 
 
